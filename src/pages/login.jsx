@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function LoginPage() {
   const [formLogin, setFormLogin] = useState({
@@ -36,12 +37,12 @@ export default function LoginPage() {
             </h3>
             <p className="">
               Não possui uma conta?{" "}
-              <a
-                href="javascript:void(0)"
+              <Link
+                to={"/cadastro"}
                 className="font-medium text-indigo-600 hover:text-indigo-500"
               >
                 Cadastre-se
-              </a>
+              </Link>
             </p>
           </div>
         </div>

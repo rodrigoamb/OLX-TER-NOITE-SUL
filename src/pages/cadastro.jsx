@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function CadastroPage() {
   const [name, setName] = useState("");
@@ -81,12 +82,12 @@ export default function CadastroPage() {
               </h3>
               <p className="">
                 Já possui uma conta?{" "}
-                <a
-                  href="javascript:void(0)"
+                <Link
+                  to={"/login"}
                   className="font-medium text-indigo-600 hover:text-indigo-500"
                 >
                   Entrar
-                </a>
+                </Link>
               </p>
             </div>
           </div>
