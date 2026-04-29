@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import Anuncios from "../components/Anuncios";
+import MeusAnuncios from "../components/MeusAnuncios";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 
-export default function InicioPage() {
+export default function MeusAnunciosPage() {
   const [state, setState] = useState(false);
 
   // Replace javascript:void(0) paths with your paths
@@ -116,7 +116,7 @@ export default function InicioPage() {
           </div>
         </div>
       </nav>
-      <Anuncios />
+      <MeusAnuncios />
       <Footer />
     </>
   );
